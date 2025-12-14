@@ -25,7 +25,7 @@ const DB_PATH = process.env.DB_PATH || './cards.db';
 const CLAIM_INTERVAL_MS = Number(process.env.CLAIM_INTERVAL_MS || 10 * 60 * 1000); // 10 min
 const CLAIM_QUEUE_DELAY_MS = Number(process.env.CLAIM_QUEUE_DELAY_MS || 200);
 const TAX_PERCENT = Number(process.env.TAX_PERCENT ?? 0.10); // 0.10 = 10%
-const RECEIVER_CARD = process.env.RECEIVER_CARD || '1f6c293c3951';
+const RECEIVER_CARD = process.env.RECEIVER_CARD || '';
 
 if (!DISCORD_TOKEN) {
   console.error('DISCORD_TOKEN is required in .env');
